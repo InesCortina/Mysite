@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+body {
+  background-color: #eae9ef;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bar {
+  font-size: 40px;
+  width: 85%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bar a {
+  color: black;
+  position: relative;
+}
+h1 {
+  font-size: 60px;
+  cursor: pointer;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 4;
+}
+.section {
+  display: inline-block;
+  flex: 1;
+  margin-bottom: 20px;
+}
+.logo {
+  flex: 0.3;
+}
+.logo img {
+  width: 80%;
+  display: inline-block;
+}
+
+button {
+  gap: 10%;
+  background: white;
+  border-radius: 20px;
+  margin: 5px 5px;
+  text-transform: uppercase;
+  color: black;
+  padding: 10px 10px;
+}
+.bar a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: pink;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  transition: 0.5s;
+}
+.bar a:hover::after {
+  width: 100%;
+}
+
+h2 {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+.graduation-picture {
+  max-height: 360px;
+  overflow: hidden;
+}
+.graduation-picture img {
+  width: 90%;
+  max-height: initial;
+}
+
+.laboratory-picture {
+  max-height: 360px;
+  overflow: hidden;
+}
+.laboratory-picture img {
+  width: 90%;
+  max-height: initial;
+}
+.madrid-picture {
+  max-height: 360px;
+  overflow: hidden;
+}
+.madrid-picture img {
+  width: 90%;
+  max-height: initial;
+}
